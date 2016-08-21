@@ -1,0 +1,22 @@
+<ivy-module version="2.0">
+
+    <info organisation="com.epam" module="hw3" />
+
+    <configurations>
+        <conf name="compile" description="Required to compile application"/>
+        <conf name="runtime" description="Additional run-time dependencies" extends="compile"/>
+        <conf name="test"    description="Required for test only" extends="runtime"/>
+    </configurations>
+
+    <dependencies>
+        <!-- compile dependencies -->
+        <!--<dependency org="org.slf4j" name="slf4j-api" rev="1.6.4"/>-->
+
+        <!-- runtime dependencies -->
+        <!--<dependency org="org.slf4j" name="slf4j-simple" rev="1.6.4" conf="runtime->default"/>-->
+
+        <!-- test dependencies -->
+        <dependency org="junit" name="junit" rev="4.12" conf="test->default"/>
+    </dependencies>
+
+</ivy-module>
