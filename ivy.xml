@@ -9,13 +9,6 @@
     </configurations>
 
     <dependencies>
-        <!-- compile dependencies -->
-        <!--<dependency org="org.slf4j" name="slf4j-api" rev="1.6.4"/>-->
-
-        <!-- runtime dependencies -->
-        <!--<dependency org="org.slf4j" name="slf4j-simple" rev="1.6.4" conf="runtime->default"/>-->
-
-        <!-- test dependencies -->
         <dependency org="junit" name="junit" rev="4.12" conf="test->default"/>
     </dependencies>
 

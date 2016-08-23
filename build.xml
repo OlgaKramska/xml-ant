@@ -22,6 +22,7 @@
     <path id="test.class.path">
         <pathelement location="${main.compiles}"/>
         <pathelement location="${test.compiles}"/>
+        <pathelement location="${test}/resources"/>
     </path>
 
     <target name="download-ivy" unless="offline">
@@ -49,9 +50,9 @@
         <echo message="Getting dependencies..." />
         <ivy:retrieve />
 
-        <ivy:cachepath pathid="compile.path" conf="compile" />
-        <ivy:cachepath pathid="runtime.path" conf="runtime" />
-        <ivy:cachepath pathid="test.path" conf="test" />
+        <ivy:cachepath pathid="compile.path"/>
+        <ivy:cachepath pathid="runtime.path"/>
+        <ivy:cachepath pathid="test.path"/>
 
     </target>
 
